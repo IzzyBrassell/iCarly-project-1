@@ -1,7 +1,5 @@
-// var tag = document.createElement('script')
-// tag.src = "https://youtube.com/iframe_api"
-// var firstScriptTag = document.getElementsByTagName('script')[0];
-//       firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+
 
 if (document.documentURI === 'https://izzybrassell.github.io/iCarly-project-1/') {
     var tag = document.createElement('script')

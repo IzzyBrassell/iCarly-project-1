@@ -1,0 +1,10 @@
+body {
+    background-color: #242424af;
+}
+
+#player {
+    float: left;
+    justify-content: flex-start;
+    padding-top: 10px;
+    padding-left: 15px;
+}
