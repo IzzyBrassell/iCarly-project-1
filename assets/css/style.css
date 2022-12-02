@@ -8,3 +8,10 @@ body {
     padding-top: 10px;
     padding-left: 15px;
 }
+
+.align-custom {
+    position: relative;
+    top: 390px;
+    right: 625px;
+    width: 625px;
+}
