@@ -15,3 +15,28 @@ body {
     right: 625px;
     width: 625px;
 }
+
+.align-links {
+    position: relative;
+    top: 410px;
+    right: 625px;
+    width: 625px;
+}
+
+.img-cus {
+    height: 100px;
+    width: 100x;
+}
+
+.card-size-cus {
+    height: 110px;
+    width: 110px;
+}
+
+.link-text-custom {
+    color: black;
+}
+
+.link-text-custom2 {
+    color: antiquewhite;
+}
