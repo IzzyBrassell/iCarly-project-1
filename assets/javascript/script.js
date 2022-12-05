@@ -1,7 +1,7 @@
 
 
 
-if (document.documentURI === 'https://izzybrassell.github.io/iCarly-project-1/') {
+if (document.documentURI === 'https://izzybrassell.github.io/iCarly-project-1/' || 'https://izzybrassell.github.io/iCarly-project-1/index.html')  {
     var tag = document.createElement('script')
 tag.src = "https://youtube.com/iframe_api"
 var firstScriptTag = document.getElementsByTagName('script')[0];
