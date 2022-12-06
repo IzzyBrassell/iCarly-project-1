@@ -1,5 +1,5 @@
 body {
-    background-color: #242424af;
+    background-color: #864f06ce;
 }
 
 #player {
@@ -31,6 +31,7 @@ body {
 .card-size-cus {
     height: 110px;
     width: 200px;
+    
 }
 
 .link-text-custom {
