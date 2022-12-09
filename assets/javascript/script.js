@@ -129,18 +129,23 @@ var firstScriptTag = document.getElementsByTagName('script')[0];
                 .then(function(response) {
                   var commentarray = response.result.items
                   for(let i=0; i < commentarray.length ;i++) {
-                    var comments = commentarray[i].snippet.topLevelComment.snippet.textOriginal
-                   
-                    var  authorName = commentarray[i].snippet.topLevelComment.snippet.authorDisplayName
+                    comments = document.createElement(`div`)
+                    authorName = document.createElement(`div`)
+                    document.setAttribute(``)
+                    commentsection = document.getElementById("commentsection")
+                    comments.innerHTML+= commentarray[i].snippet.topLevelComment.snippet.textOriginal
+                    authorName.innerHTML+= commentarray[i].snippet.topLevelComment.snippet.authorDisplayName
+                    commentsection.append(authorName)
+                    commentsection.append(comments)
                     
                     var authorAvatar = commentarray[i].snippet.topLevelComment.snippet.authorProfileImageUrl
         
                     console.log(comments)
-        
-                    document.getElementById("commentsection").innerHTML+=authorName 
+                    
+                    // document.getElementById("commentsection").innerHTML+=authorName 
                     
         
-                    document.getElementById("commentsection").innerHTML+=comments
+                    // document.getElementById("commentsection").innerHTML+=comments
                     
                     
                     
