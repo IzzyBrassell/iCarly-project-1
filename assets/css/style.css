@@ -11,7 +11,9 @@ body {
 #commentsection {
     width: 800px;
     height: 800px;
-    float: right
+    position: relative;
+    left: 660px;
+    bottom: 570px;
     
 }
 
