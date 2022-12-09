@@ -8,6 +8,12 @@ body {
     padding-top: 10px;
     padding-left: 15px;
 }
+#commentsection {
+    width: 800px;
+    height: 800px;
+    float: right
+    align-top;
+}
 
 .align-custom {
     position: relative;
