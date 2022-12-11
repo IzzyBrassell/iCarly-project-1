@@ -11,7 +11,9 @@ body {
 #commentsection {
     width: 800px;
     height: 800px;
-    float: right
+    position: relative;
+    left: 660px;
+    bottom: 570px;
     
 }
 
@@ -41,9 +43,15 @@ body {
 }
 
 .link-text-custom {
-    color: black;
+    color: whitesmoke;
 }
 
-.link-text-custom2 {
-    color: antiquewhite;
+.link-text-custom:hover {
+    color: #864f06ce;
+}
+
+.card-text-cus {
+    align-content: flex-start;
+    justify-content: left;
+    color: white; 
 }

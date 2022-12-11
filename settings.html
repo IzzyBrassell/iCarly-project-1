@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+</head>
+<body>
+    <!-- calendar -->
+    <p>Date: <input type="text" id="datepicker"></p>
+    <!-- options for both start and end streams -->
+    <select name = "time" id = "startTime">
+        <option value=""></option>
+        <option value="1">1:00</option>
+        <option value="2">2:00</option>
+        <option value="3">3:00</option>
+        <option value="4">4:00</option>
+        <option value="5">5:00</option>
+        <option value="6">6:00</option>
+        <option value="7">7:00</option>
+        <option value="8">8:00</option>
+        <option value="9">9:00</option>
+        <option value="10">10:00</option>
+        <option value="11">11:00</option>
+        <option value="12">12:00</option>
+    </select>
+    <select name =ampm id= "startAMPM">
+        <option value=""></option>
+        <option value="AM">AM</option>
+        <option value="PM">PM</option>
+    </select>
+    <select name = "time" id = "endTime">
+        <option value=""></option>
+        <option value="1">1:00</option>
+        <option value="2">2:00</option>
+        <option value="3">3:00</option>
+        <option value="4">4:00</option>
+        <option value="5">5:00</option>
+        <option value="6">6:00</option>
+        <option value="7">7:00</option>
+        <option value="8">8:00</option>
+        <option value="9">9:00</option>
+        <option value="10">10:00</option>
+        <option value="11">11:00</option>
+        <option value="12">12:00</option>
+    </select>
+    <select name =ampm id = "endAMPM">
+        <option value=""></option>
+        <option value="AM">AM</option>
+        <option value="PM">PM</option>
+    </select>
+    <!-- button that adds times to the scheduler for "going live" -->
+    <button onclick ="submitTime()" id="saveTime">save</button>
+    <div>
+        <ul id="schedule">
+        </ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src= "./assets/javascript/settings.js"></script>
+</body>
+</html>

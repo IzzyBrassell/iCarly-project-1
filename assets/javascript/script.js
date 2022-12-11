@@ -189,7 +189,7 @@ var firstScriptTag = document.getElementsByTagName('script')[0];
                   for(let i=0; i < commentarray.length ;i++) {
                     comments = document.createElement(`div`)
                     authorName = document.createElement(`div`)
-                    // document.setAttribute(``)
+
                     commentsection = document.getElementById("commentsection")
                     comments.innerHTML+= commentarray[i].snippet.topLevelComment.snippet.textOriginal
                     authorName.innerHTML+= commentarray[i].snippet.topLevelComment.snippet.authorDisplayName
@@ -199,6 +199,7 @@ var firstScriptTag = document.getElementsByTagName('script')[0];
                     var authorAvatar = commentarray[i].snippet.topLevelComment.snippet.authorProfileImageUrl
         
                     console.log(comments)
+
                   }
                         // Handle the results here (response.result has the parsed body) (JSON).
                         console.log("Response", response);
