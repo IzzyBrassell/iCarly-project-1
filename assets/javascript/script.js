@@ -45,6 +45,18 @@ var firstScriptTag = document.getElementsByTagName('script')[0];
       function stopVideo() {
         player.stopVideo();
       }
+
+      function loadClient() {
+        gapi.client.setApiKey("AIzaSyBrZq3gWBbOv5Rsns1HgkUdhZUcP91HDJk");
+        return gapi.client.load("https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest")
+            .then(function() { 
+              console.log("GAPI client loaded for API"); 
+              execute()
+          },
+                  function(err) { console.error("Error loading GAPI client for API", err); });
+      }
+      // Make sure the client is loaded before calling this method.
+      
       function execute() {
         return gapi.client.youtube.commentThreads.list({
           "part": [
@@ -73,7 +85,7 @@ var firstScriptTag = document.getElementsByTagName('script')[0];
                   },
                   
                   function(err) { console.error("Execute error", err); });
-      } 
+      }
 } else if (document.documentURI === 'https://izzybrassell.github.io/iCarly-project-1/This.html') {
     var tag = document.createElement('script')
 tag.src = "https://youtube.com/iframe_api"
@@ -110,6 +122,17 @@ var firstScriptTag = document.getElementsByTagName('script')[0];
       function stopVideo() {
         player.stopVideo();
       }
+      function loadClient() {
+        gapi.client.setApiKey("AIzaSyBrZq3gWBbOv5Rsns1HgkUdhZUcP91HDJk");
+        return gapi.client.load("https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest")
+            .then(function() { 
+              console.log("GAPI client loaded for API"); 
+              execute()
+          },
+                  function(err) { console.error("Error loading GAPI client for API", err); });
+      }
+      // Make sure the client is loaded before calling this method.
+
       function execute() {
         return gapi.client.youtube.commentThreads.list({
           "part": [
@@ -132,13 +155,25 @@ var firstScriptTag = document.getElementsByTagName('script')[0];
                 var authorAvatar = commentarray[i].snippet.topLevelComment.snippet.authorProfileImageUrl
     
                 console.log(comments)
+
+                
+                // document.getElementById("commentsection").innerHTML+=authorName 
+                
+    
+                // document.getElementById("commentsection").innerHTML+=comments
+                
+                
+                
+                // document.getElementById("commentsection").innerHTML+=authorAvatar
+    
               }
                     // Handle the results here (response.result has the parsed body) (JSON).
                     console.log("Response", response);
                   },
                   
                   function(err) { console.error("Execute error", err); });
-      }    
+
+      }
 } else {
     var tag = document.createElement('script')
     tag.src = "https://youtube.com/iframe_api"
