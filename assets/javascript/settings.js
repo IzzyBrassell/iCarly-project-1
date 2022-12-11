@@ -104,4 +104,3 @@ $(function() {
     //increase token counter
     number++
    }
- 

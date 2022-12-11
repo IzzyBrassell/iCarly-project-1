@@ -14,9 +14,12 @@ body {
     position: relative;
     left: 660px;
     bottom: 570px;
-    
 }
-
+#cogwheel {
+    justify-content: end;
+    position: relative;
+    left: 1200px;
+}
 .align-custom {
     position: relative;
     top: 390px;
